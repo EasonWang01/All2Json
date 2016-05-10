@@ -1,0 +1,36 @@
+{
+  "name": "allto-json",
+  "version": "1.0.0",
+  "description": "Convert all file to JSON.",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EasonWang01/all-to-json.git"
+  },
+  "keywords": [
+    "xls",
+    "xml",
+    "xlsx",
+    "csv",
+    "json"
+  ],
+  "author": "yicheng",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EasonWang01/all-to-json/issues"
+  },
+  "homepage": "https://github.com/EasonWang01/all-to-json",
+  "dependencies": {
+    "csvstream": "^1.1.0",
+    "xlsjs": "^0.7.5",
+    "xlsx": "^0.7.12",
+    "xml2js": "^0.4.16"
+  },
+  "devDependencies": {
+    "should": "~8.3.1",
+    "mocha": "~2.4.5"
+  }
+}
