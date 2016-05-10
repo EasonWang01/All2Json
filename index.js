@@ -1,3 +1,2 @@
-var cv = require('./libs');
+ module.exports = require('./libs');
 
-module.exports = cv;
