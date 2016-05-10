@@ -75,11 +75,11 @@ csv(filename,opts,callback)
 ```
 opts is optional,below is available options
 
-* |encoding: |default to utf8  |
-* |delimiter:|default to ,     |
-* |newlint:  |default to \n    |
-* |quote:    |default to \"    |
-* |header:   | default to false|
+|encoding: |default to utf8  |
+|delimiter:|default to ,     |
+|newlint:  |default to \n    |
+|quote:    |default to \"    |
+|header:   | default to false|
 ```
 csvFile(filename,opts)
 ```
