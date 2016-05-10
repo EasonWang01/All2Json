@@ -28,7 +28,7 @@ require('allto-json').xml('sample.xml',function(error,result){
 ```
 ####XML to JSON file
 ```
-require('allto-json').xml('sample.xml')
+require('allto-json').xmlFile('sample.xml')
 ```
 
 
@@ -55,18 +55,11 @@ require('allto-json').xls(('sample.xls'),function(error,result){
 })
 
 ```
+
+
 ####xls to JSON file
 ```
-
-require('allto-json').xlsFile('sample.xls')
-
-
-```
-
-
-####XML to JSON file
-```
-require('allto-json').xmlFile('sample.xml')
+require('allto-json').xls('sample.xml')
 
 ```
 
