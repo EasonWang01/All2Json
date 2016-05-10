@@ -105,7 +105,7 @@ xlsx(filename, opts, callback)
 opts is optional,below is available options
 
 second colume shows default value
- 
+ ```
 * cellFormula	true	Save formulae to the .f field **
 * cellHTML	true	Parse rich text and save HTML to the .h field
 * cellNF	false	Save number format string to the .z field
@@ -119,7 +119,7 @@ second colume shows default value
 * bookSheets	false	If true, only parse enough to get the sheet names
 * bookVBA	false	If true, expose vbaProject.bin to vbaraw field **
 * password	""	If defined and file is encrypted, use password **
-
+```
 
 ```
 xlsxFile(filename,opts)
@@ -135,7 +135,7 @@ opts is optional,below is available options
 
 second colume shows default value
 
-
+```
 * cellFormula	true	Save formulae to the .f field **
 * cellNF	false	Save number format string to the .z field
 * cellStyles	false	Save style/theme info to the .s field
@@ -144,6 +144,7 @@ second colume shows default value
 * bookProps	false	If true, only parse enough to get book metadata **
 * bookSheets	false	If true, only parse enough to get the sheet names
 * password	""	If defined and file is encrypted, use password **
+```
 
 ```
 xls(filename, opts)
