@@ -10,11 +10,7 @@
 npm install allto-json
 ```
 #How to use?
-| Tables   |      Are      |  Cool |
-|----------|:-------------:|------ |
-| col 1 is |  left-aligned | $1600 |
-| col 2 is |    centered   |   $12 |
-| col 3 is | right-aligned |    $1 |
+
 ##1.CSV
 ```
 require('allto-json').csv('sample.csv',function(err,result){
@@ -79,11 +75,11 @@ csv(filename,opts,callback)
 ```
 opts is optional,below is available options
 
-* encoding: default to utf8
-* delimiter: default to ,
-* newlint: default to \n
-* quote: default to \"
-* header: default to false
+* |encoding: |default to utf8|
+* |delimiter:|default to ,|
+* |newlint:  |default to \n|
+* |quote: |default to \"|
+* |header:| default to false|
 ```
 csvFile(filename,opts)
 ```
