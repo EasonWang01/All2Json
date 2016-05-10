@@ -1,5 +1,9 @@
 # Convert files to JSON
 
+
+![allto_json](https://cloud.githubusercontent.com/assets/11001914/15138634/bc965fa4-16c3-11e6-8c26-b312165714ac.gif)
+
+
 #Install
 
 ```
@@ -59,7 +63,7 @@ require('allto-json').xls(('sample.xls'),function(error,result){
 
 ####xls to JSON file
 ```
-require('allto-json').xls('sample.xml')
+require('allto-json').xlsFile('sample.xml')
 
 ```
 
