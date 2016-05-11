@@ -108,19 +108,19 @@ second colume shows default value
 
 |          |      |           |
 |----------|-----|------------|
-| cellFormula|	true|	Save formulae to the .f field **|
+| cellFormula|	true|	Save formulae to the .f field |
 |cellHTML|	true|	Parse rich text and save HTML to the .h field|
 | cellNF|	false|	Save number format string to the .z field|
 | cellStyles|	false|	Save style/theme info to the .s field|
-| cellDates|	false|	Store dates as type d (default is n) **|
+| cellDates|	false|	Store dates as type d (default is n) |
 |sheetStubs|	false|	Create cell objects for stub cells|
-|sheetRows|	0|	If >0, read the first sheetRows rows **|
+|sheetRows|	0|	If >0, read the first sheetRows rows |
 | bookDeps|	false|	If true, parse calculation chains|
-| bookFiles|	false|	If true, add raw files to book object **|
-| bookProps|	false|	If true, only parse enough to get book metadata **|
+| bookFiles|	false|	If true, add raw files to book object |
+| bookProps|	false|	If true, only parse enough to get book metadata |
 | bookSheets|	false|	If true, only parse enough to get the sheet names|
-| bookVBA|	false|	If true, expose vbaProject.bin to vbaraw field **|
-|password|	""|	If defined and file is encrypted, use password **|
+| bookVBA|	false|	If true, expose vbaProject.bin to vbaraw field |
+|password|	""|	If defined and file is encrypted, use password |
 
 
 ```
@@ -137,16 +137,17 @@ opts is optional,below is available options
 
 second colume shows default value
 
-```
-* cellFormula	true	Save formulae to the .f field **
-* cellNF	false	Save number format string to the .z field
-* cellStyles	false	Save style/theme info to the .s field
-* sheetRows	0	If >0, read the first sheetRows rows **
-* bookFiles	false	If true, add raw files to book object **
-* bookProps	false	If true, only parse enough to get book metadata **
-* bookSheets	false	If true, only parse enough to get the sheet names
-* password	""	If defined and file is encrypted, use password **
-```
+|          |      |           |
+|----------|-----|------------|
+| cellFormula|	true|	Save formulae to the .f field |
+| cellNF|	false|	Save number format string to the .z field|
+| cellStyles|	false|	Save style/theme info to the .s field|
+| sheetRows|	0|	If >0, read the first sheetRows rows |
+|bookFiles|	false|	If true, add raw files to book object |
+| bookProps|	false|	If true, only parse enough to get book metadata |
+|bookSheets|	false|	If true, only parse enough to get the sheet names|
+| password|	""|	If defined and file is encrypted, use password |
+
 
 ```
 xls(filename, opts)
