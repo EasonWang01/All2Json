@@ -1,20 +1,19 @@
 
-var util =require('util')
-var fs = require('fs');
-var XLS = require('xlsjs');
+const util = require('util')
+const fs = require('fs');
+const XLS = require('xlsjs');
 
-exports.xls_json=function (file, opts, callback) {
-	if(arguments.length === 2 && typeof arguments[1] === 'function') {
-		
+exports.xls_json = function (file, opts, callback) {
+	if (arguments.length === 2 && typeof arguments[1] === 'function') {
 		callback = opts;
 		opts = null;
 	}
 
-	return callback(null, util.inspect((XLS.readFile(file, opts)),{ showHidden: true, depth: null}));
+	return callback(null, util.inspect((XLS.readFile(file, opts)), { showHidden: true, depth: null }));
 }
 
-exports.xls_json_file =function(file, opts) {
+exports.xls_json_file = function (file, opts) {
 	opts = opts || null;
-	fs.writeFileSync('output.json', util.inspect(XLS.readFile(file, opts),{ showHidden: true, depth: null}), 'utf8');
-	
+	fs.writeFileSync('output.json', util.inspect(XLS.readFile(file, opts), { showHidden: true, depth: null }), 'utf8');
+
 }

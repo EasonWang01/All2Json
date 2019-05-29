@@ -3,74 +3,68 @@
 ![allto_json](https://cloud.githubusercontent.com/assets/11001914/15138634/bc965fa4-16c3-11e6-8c26-b312165714ac.gif)
 
 
-#Install
+# Install
 
 ```
 npm install allto-json
 ```
-#How to use?
+# How to use?
 
-##1.CSV
+## 1.CSV
+```js
+require('allto-json').csv('sample.csv', function(err,result){
+  console.log(result);
+});
 ```
-require('allto-json').csv('sample.csv',function(err,result){
-	console.log(result);
-})
-```
 
 
-####CSV to JSON file
+#### CSV to JSON file
 ```
 require('allto-json').csvFile('sample.csv')
 
 ```
-##2.XML
+## 2.XML
+```js
+require('allto-json').xml('sample.xml', function(error, result){
+  console.log(result)
+});
 ```
-require('allto-json').xml('sample.xml',function(error,result){
-	console.log(result)
-})
-```
-####XML to JSON file
-```
+#### XML to JSON file
+```js
 require('allto-json').xmlFile('sample.xml')
 ```
 
 
-##3.xlsx
-```
-require('allto-json').xlsx(('sample.xlsx'),function(error,result){
-	console.log(result)
-})
+## 3.xlsx
+```js
+require('allto-json').xlsx(('sample.xlsx'),function(error, result){
+  console.log(result)
+});
 
 ```
-####xlsx to JSON file
-```
-
-
+#### xlsx to JSON file
+```js
 require('allto-json').xlsxFile('sample.xlsx')
-
-
 ```
-##4.xls 
-```
-
-require('allto-json').xls(('sample.xls'),function(error,result){
-	console.log(result)
-})
-
+## 4.xls 
+```js
+require('allto-json').xls(('sample.xls'),function(error, result){
+  console.log(result)
+});
 ```
 
 
-####xls to JSON file
-```
-require('allto-json').xlsFile('sample.xml')
+#### xls to JSON file
+```js
+require('allto-json').xlsFile('sample.xml');
 
 ```
 
-#API
+# API
 
-##1.CSV
-```
-csv(filename,opts,callback)
+## 1.CSV
+```js
+csv(filename, opts, callback);
 ```
 opts is optional,below is available options
 
@@ -87,7 +81,7 @@ csvFile(filename,opts)
 ```
 no callback require,opts is same as above.
 
-##2.XML
+## 2.XML
 ```
 xml(filename,callback)
 ```
@@ -97,7 +91,7 @@ xml(filename)
 ```
 no callback
 
-##3.xlsx
+## 3.xlsx
 ```
 xlsx(filename, opts, callback)
 ```
@@ -127,7 +121,7 @@ xlsxFile(filename,opts)
 ```
 opts is same as above.
 
-##4.xls
+## 4.xls
 
 ```
 xls(filename, opts, callback)
@@ -156,9 +150,9 @@ opts is same as above
 
 
 -----
-you can use opts like this
+You can also use opts like this.
 ```
-csv(filename,{header:true},callback)
+csv(filename, { header: true }, callback)
 ```
 
 

@@ -1,5 +1,4 @@
-
-require('../index').csv('sample.csv',function(err,result){
+require('../index').csv('sample.csv', function (err, result) {
 	console.log(result);
 })
 
