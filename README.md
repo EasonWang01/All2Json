@@ -1,8 +1,3 @@
-# Convert files to JSON
-
-![allto_json](https://cloud.githubusercontent.com/assets/11001914/15138634/bc965fa4-16c3-11e6-8c26-b312165714ac.gif)
-
-
 # Install
 
 ```
@@ -12,7 +7,7 @@ npm install allto-json
 
 ## 1.CSV
 ```js
-require('allto-json').csv('sample.csv', function(err,result){
+require('allto-json').csv('sample.csv', function(err, result){
   console.log(result);
 });
 ```
@@ -37,7 +32,7 @@ require('allto-json').xmlFile('sample.xml')
 
 ## 3.xlsx
 ```js
-require('allto-json').xlsx(('sample.xlsx'),function(error, result){
+require('allto-json').xlsx(('sample.xlsx'), function(error, result){
   console.log(result)
 });
 
@@ -48,7 +43,7 @@ require('allto-json').xlsxFile('sample.xlsx')
 ```
 ## 4.xls 
 ```js
-require('allto-json').xls(('sample.xls'),function(error, result){
+require('allto-json').xls(('sample.xls'), function(error, result){
   console.log(result)
 });
 ```
